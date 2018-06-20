@@ -56,7 +56,7 @@ class FumefxConfig():
         AFLICS_PATH = self._PluginDir + r"\AFLICS"  
         dstDir=r'"C:\Program Files (x86)\AFLICS"'  
         os.system ("robocopy /e /ns /nc /nfl /ndl /np  %s %s" % (AFLICS_PATH, dstDir))
-        #添加服务
+        #创建服务
         os.system(r'sc create "AfterFLICS V3" binPath= "C:\Program Files (x86)\AFLICS\AfterFLICS.exe"  DisplayName= "AfterFLICS V3"')
         #开启服务
         os.system(r'net start "AfterFLICS V3"')
