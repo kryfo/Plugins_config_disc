@@ -53,3 +53,4 @@ def main(*args):
 if __name__ == '__main__':
     main()
     # os.system ("\""+MAYA_ROOT + "/bin/maya.exe"+"\"")
+    # test git
